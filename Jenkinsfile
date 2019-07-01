@@ -11,7 +11,7 @@ pipeline {
       steps {
         echo 'Iniciando pipeline'
         bat(script: 'mvn clean', encoding: 'UTF-8')
-        bat(script: 'mvn install', encoding: 'UTF-8')
+        bat(script: 'mvn install -DskipTests', encoding: 'UTF-8')
       }
     }
   }
